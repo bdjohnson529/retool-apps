@@ -1,7 +1,7 @@
 id: getPatients
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 58fa29a8-4578-4368-9b21-e277847268f4
+resourceName: 425c6fc6-7cad-4501-a199-1cd2e9a6973a
 resourceDisplayName: benjohnson
 template:
   ordered:

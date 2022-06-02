@@ -1,0 +1,26 @@
+id: text1
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '## Demo App'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.8
+    height: 0.6
+    width: 3
+createdAt: 2022-06-02T18:26:33.904Z

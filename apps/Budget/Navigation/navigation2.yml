@@ -1,0 +1,127 @@
+id: navigation2
+type: widget
+subtype: NavigationWidget
+template:
+  ordered:
+    - horizontalAlign: right
+    - valueToCopy: ''
+    - menuItems:
+        - ordered:
+            - title: Accounts
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ac7ce9ae-f97e-11ec-96f3-43fd4e06c69a
+                  - exportFileName: ''
+                  - disabled: ''
+            - menuItems: []
+        - ordered:
+            - title: Budget
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ec0f6fe6-f9d4-11ec-b47a-47708c644e64
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Income
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: e6019d0e-f9cf-11ec-88ba-bb310e5ab49c
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Expenses
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: d59a4cb0-f9b9-11ec-8b20-2ffc6fe146f4
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Upload
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: 48076de6-fa37-11ec-a2eb-b38adac358b6
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    col: 3
+    height: 1
+    width: 5
+createdAt: 2022-07-02T03:29:20.234Z

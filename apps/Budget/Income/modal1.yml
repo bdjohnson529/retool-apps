@@ -1,0 +1,26 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add Transaction
+style:
+  ordered: []
+position2:
+  position2:
+    row: 11.600000000000001
+    col: 2
+    height: 1
+    width: 2
+createdAt: 2022-07-02T06:33:18.523Z

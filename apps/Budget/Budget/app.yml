@@ -1,0 +1,12 @@
+version: 43.0.9
+pageUuid: ec0f6fe6-f9d4-11ec-b47a-47708c644e64
+appTemplate:
+  folders:
+    - Accounts
+    - Transactions
+    - Income
+    - Dates
+  rootScreen: null
+  version: 2.91.13
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

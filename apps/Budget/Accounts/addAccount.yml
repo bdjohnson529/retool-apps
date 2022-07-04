@@ -1,0 +1,104 @@
+id: addAccount
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceDisplayName: budget
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: 1ce8d4b9-540b-4745-8dd0-fefa7171b484
+    - playgroundQueryId: 8
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - recordId: ''
+    - retoolVersion: 2.91.13
+    - importedQueryInputs:
+        ordered:
+          - variable0: '{{ form1.data.Name }}'
+          - variable1: '{{ form1.data.currency1 }}'
+          - variable2: '{{ form1.data.currency2 }}'
+          - variable3: '{{ form1.data.currency1 + form1.data.currency2 }}'
+          - variable4: '{{ current_user.id }}'
+    - isImported: true
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: gui
+    - actionType: INSERT
+    - changesetObject: '{{ form1.data }}'
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: >-
+        [{"key":"Name","value":"{{ variable0 }}"},{"key":"Balance","value":"{{
+        variable1 }}"},{"key":"Pending","value":"{{ variable2
+        }}"},{"key":"Total","value":"{{ variable3
+        }}"},{"key":"user_id","value":"{{ variable4 }}"}]
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: getAccounts
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: accounts
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-07-02T01:02:40.920Z

@@ -1,0 +1,10 @@
+version: 43.0.9
+pageUuid: ac7ce9ae-f97e-11ec-96f3-43fd4e06c69a
+appTemplate:
+  rootScreen: null
+  preloadedAppJSLinks:
+    array:
+      - https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js
+  version: 2.93.9
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

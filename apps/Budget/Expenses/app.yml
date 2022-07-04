@@ -1,0 +1,10 @@
+version: 43.0.9
+pageUuid: d59a4cb0-f9b9-11ec-8b20-2ffc6fe146f4
+appTemplate:
+  folders:
+    - Accounts
+    - Transactions
+  rootScreen: null
+  version: 2.93.9
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

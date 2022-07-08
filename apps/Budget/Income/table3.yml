@@ -63,7 +63,12 @@ template:
     - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
-        ordered: []
+        ordered:
+          - id: true
+          - date: true
+          - description: true
+          - amount: true
+          - user_id: true
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
@@ -91,7 +96,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: '20'
+    - pageSize: 9
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -144,7 +149,12 @@ template:
           index: null
           data: null
           columnName: null
-    - columns: []
+    - columns:
+        - id
+        - date
+        - description
+        - amount
+        - user_id
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null

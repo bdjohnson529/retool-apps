@@ -1,7 +1,7 @@
 id: addAccount
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:
@@ -17,21 +17,16 @@ template:
     - runWhenModelUpdates: false
     - showFailureToaster: true
     - query: ''
-    - playgroundQueryUuid: 1ce8d4b9-540b-4745-8dd0-fefa7171b484
-    - playgroundQueryId: 8
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - recordId: ''
     - retoolVersion: 2.91.13
     - importedQueryInputs:
-        ordered:
-          - variable0: '{{ form1.data.Name }}'
-          - variable1: '{{ form1.data.currency1 }}'
-          - variable2: '{{ form1.data.currency2 }}'
-          - variable3: '{{ form1.data.currency1 + form1.data.currency2 }}'
-          - variable4: '{{ current_user.id }}'
-    - isImported: true
+        ordered: []
+    - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
@@ -40,7 +35,7 @@ template:
     - metadata: null
     - editorMode: gui
     - actionType: INSERT
-    - changesetObject: '{{ form1.data }}'
+    - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -53,10 +48,9 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"Name","value":"{{ variable0 }}"},{"key":"Balance","value":"{{
-        variable1 }}"},{"key":"Pending","value":"{{ variable2
-        }}"},{"key":"Total","value":"{{ variable3
-        }}"},{"key":"user_id","value":"{{ variable4 }}"}]
+        [{"key":"Name","value":"{{textArea1.value}}"},{"key":"Balance","value":"{{currency1.value}}"},{"key":"Pending","value":"{{currency2.value}}"},{"key":"Total","value":"{{
+        currency1.value + currency2.value
+        }}"},{"key":"user_id","value":"{{current_user.id}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - watchedParams: []
@@ -77,17 +71,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: getAccounts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: accounts
     - queryTimeout: '10000'
     - requireConfirmation: false

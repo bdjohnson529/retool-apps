@@ -1,7 +1,7 @@
 id: updateAccount
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:
@@ -17,30 +17,27 @@ template:
     - runWhenModelUpdates: false
     - showFailureToaster: true
     - query: ''
-    - playgroundQueryUuid: 5f708e87-945c-4fcf-ace1-fda8c457b6ad
-    - playgroundQueryId: 9
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - recordId: ''
     - retoolVersion: 2.91.13
     - importedQueryInputs:
-        ordered:
-          - variable0: '{{ table1.selectedRow.data.id }}'
-          - variable1: '{{ form2.data.Name }}'
-          - variable2: '{{ form2.data.Balance }}'
-          - variable3: '{{ form2.data.Pending }}'
-          - variable4: '{{ form2.data.Balance + form2.data.Pending }}'
-    - isImported: true
+        ordered: []
+    - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: '[{"key":"id","value":"{{ variable0 }}","operation":"="}]'
+    - filterBy: >-
+        [{"key":"id","value":"{{table1.selectedRow.data.id}}","operation":"="},{"key":"Name","value":"{{textArea2.value}}","operation":"="},{"key":"Balance","value":"{{currency3.value}}","operation":"="},{"key":"Pending","value":"{{currency4.value}}","operation":"="},{"key":"Total","value":"{{currency3.value
+        + currency4.value}} ","operation":"="}]
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: gui
-    - actionType: UPDATE_BY
-    - changesetObject: '{{ form1.data }}'
+    - actionType: ''
+    - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -52,10 +49,7 @@ template:
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: >-
-        [{"key":"Name","value":"{{ variable1 }}"},{"key":"Balance","value":"{{
-        variable2 }}"},{"key":"Pending","value":"{{ variable3
-        }}"},{"key":"Total","value":"{{ variable4 }}"}]
+    - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
     - watchedParams: []
@@ -76,17 +70,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: getAccounts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: accounts
     - queryTimeout: '10000'
     - requireConfirmation: false

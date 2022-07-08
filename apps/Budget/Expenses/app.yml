@@ -5,6 +5,5 @@ appTemplate:
     - Accounts
     - Transactions
   rootScreen: null
-  version: 2.93.9
+  version: 2.88.13
   markdownLinkBehavior: auto
-  experimentalDataTabEnabled: true

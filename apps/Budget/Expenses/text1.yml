@@ -1,0 +1,28 @@
+id: text1
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: Estimated
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    subcontainer: e8749
+    row: 1.600000000000001
+    height: 0.6
+    width: 4
+createdAt: 2022-07-08T23:06:44.065Z

@@ -1,0 +1,60 @@
+id: steps1
+type: widget
+subtype: StepsWidget
+resourceName: null
+template:
+  ordered:
+    - horizontalAlign: center
+    - _values:
+        - Step 1
+        - Step 2
+        - Step 3
+    - showStepNumbers: true
+    - values:
+        array: []
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: steppedContainer1
+    - selectedItem: null
+    - showInEditor: false
+    - _defaultValue: null
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - indicateCompletedSteps: false
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - _ids:
+        - '96734'
+        - bc168
+        - 0461a
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    rowGroup: header
+    height: 0.8
+    width: 12
+createdAt: 2022-07-08T23:15:40.849Z

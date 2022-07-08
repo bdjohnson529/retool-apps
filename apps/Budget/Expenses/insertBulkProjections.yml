@@ -1,4 +1,4 @@
-id: getFilteredTransactions
+id: insertBulkProjections
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -6,7 +6,7 @@ resourceDisplayName: budget
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - records: '{{generateProjection.data}}'
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -14,14 +14,13 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: "select * from transactions\nwhere \t\tuser_id = {{current_user.id}}\nand       extract(month from \"Transaction_Date\") = {{month3.value}}\nand \t\t\t\"Category\" = {{table2.selectedRow.data.category}}\nand       \"Description\" ilike {{'%' + textInput1.value + '%'}}"
+    - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -33,8 +32,8 @@ template:
     - filterBy: ''
     - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
+    - editorMode: gui
+    - actionType: BULK_INSERT
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -59,7 +58,7 @@ template:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
+    - bulkUpdatePrimaryKey: id
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -69,7 +68,7 @@ template:
 
         return data
     - events: []
-    - tableName: ''
+    - tableName: projections
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -82,4 +81,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T04:11:06.601Z
+createdAt: 2022-07-08T22:49:46.962Z
+folder: Projection

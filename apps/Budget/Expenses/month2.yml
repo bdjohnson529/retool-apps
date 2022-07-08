@@ -1,0 +1,228 @@
+id: month2
+type: widget
+subtype: SelectWidget2
+resourceName: null
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - showSelectionIndicator: true
+    - _values:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ new Date().getMonth() + 1 }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - placeholder: Select a month
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - label: Past Month
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - d8112
+        - d2eb1
+        - 36a93
+        - c20ad
+        - 46f58
+        - 3af55
+        - badbc
+        - 5182f
+        - 7123b
+        - 701ab
+        - '08007'
+        - a382f
+    - emptyMessage: ''
+    - overlayMaxHeight: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - January
+        - February
+        - March
+        - April
+        - May
+        - June
+        - July
+        - August
+        - September
+        - October
+        - November
+        - December
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.4000000000000003
+    height: 1
+    width: 2
+createdAt: 2022-07-08T21:48:09.297Z

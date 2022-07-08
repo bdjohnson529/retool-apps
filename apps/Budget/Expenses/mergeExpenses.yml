@@ -1,14 +1,11 @@
-id: getFilteredTransactions
+id: mergeExpenses
 type: datasource
-subtype: SqlQueryUnified
-resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
-resourceDisplayName: budget
+subtype: SqlTransformQuery
+resourceName: SQL Transforms
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
@@ -16,27 +13,19 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: "select * from transactions\nwhere \t\tuser_id = {{current_user.id}}\nand       extract(month from \"Transaction_Date\") = {{month3.value}}\nand \t\t\t\"Category\" = {{table2.selectedRow.data.category}}\nand       \"Description\" ilike {{'%' + textInput1.value + '%'}}"
+    - query: "select     C.id                                                                as id,\n\t\t\t\t   coalesce(A.Category, B.Category, C.Category)                        as category,\n           coalesce(A.amount, 0)                                               as current,\n           coalesce(C.amount, 0)\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t as projected,\n           coalesce(B.amount, 0) \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  \t\t\t\t\t\t as past\nfrom       {{formatDataAsArray(getMonthAExpenses.data)}} as A\nouter join {{formatDataAsArray(getMonthBExpenses.data)}} as B\non         A.Category = B.Category\nouter join {{formatDataAsArray(getProjectedExpenses.data)}} as C\non         coalesce(A.Category, B.Category) = C.Category"
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -44,7 +33,6 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -52,14 +40,12 @@ template:
     - queryTriggerDelay: '0'
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -69,17 +55,14 @@ template:
 
         return data
     - events: []
-    - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T04:11:06.601Z
+createdAt: 2022-07-08T21:51:47.636Z
+folder: Expenses

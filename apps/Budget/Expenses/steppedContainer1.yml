@@ -1,0 +1,77 @@
+id: steppedContainer1
+type: widget
+subtype: ContainerWidget2
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - heightType: auto
+    - currentViewKey: >-
+        {{ generateSelectedProjection.data.length == 0 ? self.viewKeys[1] :
+        self.viewKeys[0] }}
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+    - hidden: false
+    - showHeader: false
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - Update
+        - Create
+    - events:
+        ordered: []
+    - _ids:
+        - e8749
+        - 253c1
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.3999999999999977
+    col: 8
+    height: 0.2
+    width: 4
+createdAt: 2022-07-08T23:15:40.517Z

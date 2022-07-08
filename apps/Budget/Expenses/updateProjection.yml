@@ -1,4 +1,4 @@
-id: getExpensesByCategory
+id: updateProjection
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -6,7 +6,7 @@ resourceDisplayName: budget
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - records: '{{table2.recordUpdates}}'
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -14,14 +14,13 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: "SELECT  \t\"Category\",\n\t\t\t\t\tSUM(\"Amount\")  as Amount\nFROM      transactions\nWHERE     user_id = {{current_user.id}}\nGROUP BY  \"Category\""
+    - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -30,11 +29,11 @@ template:
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
+    - filterBy: '[{"key":"id","value":"{{table2.selectedRow.data.id}}","operation":"="}]'
     - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
+    - editorMode: gui
+    - actionType: UPDATE_BY
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -47,7 +46,7 @@ template:
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: ''
+    - changeset: '[{"key":"Amount","value":"{{numberInput1.value}}"}]'
     - rawData: null
     - queryTriggerDelay: '0'
     - watchedParams: []
@@ -59,7 +58,7 @@ template:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
+    - bulkUpdatePrimaryKey: id
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -68,8 +67,18 @@ template:
         20)
 
         return data
-    - events: []
-    - tableName: ''
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: getProjectedExpenses
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: projections
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -82,5 +91,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T03:59:44.476Z
-folder: Transactions
+createdAt: 2022-07-08T23:00:29.719Z
+folder: Projection

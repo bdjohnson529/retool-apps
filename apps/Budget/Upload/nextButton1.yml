@@ -36,11 +36,22 @@ template:
             - event: click
             - type: datasource
             - waitMs: '0'
+        - method: trigger
+          enabled: '{{steppedContainer1.currentViewIndex == 1}}'
+          params:
+            ordered: []
+          targetId: null
+          pluginId: transformTransactions
+          waitType: debounce
+          event: click
+          type: datasource
+          waitMs: '0'
     - loading: 'false'
     - loaderPosition: auto
     - disabled: >-
         {{ steppedContainer1.currentViewIndex + 1 ===
-        steppedContainer1.viewKeys.length }}
+        steppedContainer1.viewKeys.length || !select1.value ||
+        fileButton1.parsedValue.length == 0}}
     - maintainSpaceWhenHidden: false
 style:
   ordered: []

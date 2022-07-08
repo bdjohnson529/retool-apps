@@ -1,7 +1,7 @@
 id: getCategories
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:

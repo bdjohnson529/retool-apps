@@ -1,36 +1,26 @@
-id: select1
+id: select_post_date
 type: widget
 subtype: SelectWidget2
-resourceName: null
 template:
   ordered:
-    - imageByIndex:
-        array: []
+    - imageByIndex: ''
     - _disabledByIndex: []
     - showSelectionIndicator: true
     - _values: []
-    - iconByIndex:
-        array: []
-    - values: '{{ item.id }}'
+    - iconByIndex: ''
+    - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex:
-        - ''
-        - ''
-        - ''
+    - _iconByIndex: []
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ getAccounts.data }}'
+    - data: '{{ getColumns.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex:
-        array: []
+    - fallbackTextByIndex: ''
     - textBefore: ''
-    - _fallbackTextByIndex:
-        - ''
-        - ''
-        - ''
+    - _fallbackTextByIndex: []
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -38,13 +28,12 @@ template:
     - textAfter: ''
     - showInEditor: false
     - _defaultValue: null
-    - showClear: true
+    - showClear: false
     - tooltipText: ''
     - labelAlign: left
-    - formDataKey: '{{ self.id }}'
-    - value: null
-    - hiddenByIndex:
-        array: []
+    - formDataKey: post_date
+    - value: Post Date
+    - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
@@ -53,10 +42,9 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: Account
+    - label: Post Date
     - _hasMigratedNestedItems: true
-    - captionByIndex:
-        array: []
+    - captionByIndex: ''
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
@@ -64,15 +52,10 @@ template:
     - invalid: false
     - selectedIndex: null
     - _tooltipByIndex: []
-    - _colorByIndex:
-        - ''
-        - ''
-        - ''
-    - tooltipByIndex:
-        array: []
+    - _colorByIndex: []
+    - tooltipByIndex: ''
     - iconBefore: ''
-    - colorByIndex:
-        array: []
+    - colorByIndex: ''
     - selectedLabel: ''
     - events:
         ordered: []
@@ -81,26 +64,22 @@ template:
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
-    - labelPosition: top
+    - labelPosition: left
     - _labels: []
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex:
-        array: []
+    - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
-    - _imageByIndex:
-        - ''
-        - ''
-        - ''
+    - _imageByIndex: []
     - required: false
-    - labels: '{{ item.Name }}'
+    - labels: '{{ _.startCase(item) }}'
 style:
   ordered: []
 position2:
   position2:
-    container: steppedContainer1
-    subcontainer: 108a4
+    container: form1
+    row: 1
     height: 1
-    width: 6
-createdAt: 2022-07-08T20:14:18.753Z
+    width: 9
+createdAt: 2022-07-02T18:58:03.331Z

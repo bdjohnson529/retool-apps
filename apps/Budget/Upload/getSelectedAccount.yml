@@ -1,4 +1,4 @@
-id: getAllTransactions
+id: getSelectedAccount
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -16,7 +16,10 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: select * from transactions
+    - query: |-
+        select *
+        from accounts
+        where id = {{select1.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -61,13 +64,7 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: return data[0]
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
@@ -82,5 +79,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T02:56:52.253Z
-folder: Transactions
+createdAt: 2022-07-08T20:30:54.676Z
+folder: Accounts

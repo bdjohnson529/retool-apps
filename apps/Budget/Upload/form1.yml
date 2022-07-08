@@ -12,6 +12,7 @@ template:
         object: {}
     - showHeader: true
     - hoistFetching: true
+    - _hasSubmitEvents: false
     - initialData: null
     - showInEditor: false
     - tooltipText: ''

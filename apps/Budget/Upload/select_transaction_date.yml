@@ -1,4 +1,4 @@
-id: select4
+id: select_transaction_date
 type: widget
 subtype: SelectWidget2
 template:
@@ -31,8 +31,8 @@ template:
     - showClear: false
     - tooltipText: ''
     - labelAlign: left
-    - formDataKey: '{{ self.id }}'
-    - value: Category
+    - formDataKey: transaction_date
+    - value: Transaction Date
     - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
@@ -42,7 +42,7 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: Category
+    - label: Transaction Date
     - _hasMigratedNestedItems: true
     - captionByIndex: ''
     - _validate: false
@@ -79,7 +79,6 @@ style:
 position2:
   position2:
     container: form1
-    row: 3
     height: 1
     width: 9
-createdAt: 2022-07-02T18:58:04.258Z
+createdAt: 2022-07-02T18:58:02.956Z

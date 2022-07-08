@@ -1,4 +1,4 @@
-id: select5
+id: select_amount
 type: widget
 subtype: SelectWidget2
 template:
@@ -31,7 +31,7 @@ template:
     - showClear: false
     - tooltipText: ''
     - labelAlign: left
-    - formDataKey: '{{ self.id }}'
+    - formDataKey: amount
     - value: Amount
     - hiddenByIndex: ''
     - labelCaption: ''

@@ -1,42 +1,69 @@
-id: getAllTransactions
+id: transformTransactions
 type: datasource
-subtype: SqlQueryUnified
-resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
-resourceDisplayName: budget
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: select * from transactions
+    - query: >-
+        const data = formatDataAsObject(fileButton1.parsedValue[0])
+
+
+        // values
+
+        const transaction_date = select_transaction_date.value
+
+        const post_date = select_post_date.value
+
+        const description = select_description.value
+
+        const category = select_category.value
+
+        const amount = select_amount.value
+
+
+        // new dataset
+
+        var new_data = {}
+
+        new_data['Transaction_Date'] = data[transaction_date]
+
+        new_data['Post_Date'] = data[post_date]
+
+        new_data['Description'] = data[description]
+
+        new_data['Category'] = data[category]
+
+        new_data['Amount'] = data[amount]
+
+        new_data['Account_ID'] =
+        Array(data[transaction_date].length).fill(select1.value)
+
+        new_data['user_id'] =
+        Array(data[transaction_date].length).fill(current_user.id)
+
+
+        return new_data
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -44,7 +71,6 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -52,14 +78,12 @@ template:
     - queryTriggerDelay: '0'
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -69,18 +93,14 @@ template:
 
         return data
     - events: []
-    - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T02:56:52.253Z
+createdAt: 2022-07-08T18:54:30.541Z
 folder: Transactions

@@ -1,4 +1,4 @@
-id: getAllTransactions
+id: uploadTransactions
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -6,7 +6,7 @@ resourceDisplayName: budget
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - records: '{{formatDataAsArray(transformTransactions.data)}}'
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -14,14 +14,13 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: select * from transactions
+    - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -33,8 +32,8 @@ template:
     - filterBy: ''
     - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
+    - editorMode: gui
+    - actionType: BULK_INSERT
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -69,7 +68,7 @@ template:
 
         return data
     - events: []
-    - tableName: ''
+    - tableName: transactions
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -82,5 +81,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T02:56:52.253Z
+createdAt: 2022-07-08T19:03:47.397Z
 folder: Transactions

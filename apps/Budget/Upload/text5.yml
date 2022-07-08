@@ -1,6 +1,7 @@
-id: text1
+id: text5
 type: widget
 subtype: TextWidget2
+resourceName: null
 template:
   ordered:
     - heightType: auto
@@ -11,7 +12,7 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '**Name :** {{fileButton1.files[''0''].name}}'
+    - value: '#### Upload to {{getSelectedAccount.data.Name[0]}} Account'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -20,8 +21,7 @@ style:
 position2:
   position2:
     container: steppedContainer1
-    subcontainer: 108a4
-    row: 1.999999999999998
+    subcontainer: 17f58
     height: 0.6
-    width: 12
-createdAt: 2022-07-04T01:47:37.328Z
+    width: 8
+createdAt: 2022-07-08T20:30:36.262Z

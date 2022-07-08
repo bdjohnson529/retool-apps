@@ -7,6 +7,5 @@ appTemplate:
     - Income
     - Dates
   rootScreen: null
-  version: 2.91.13
+  version: 2.88.13
   markdownLinkBehavior: auto
-  experimentalDataTabEnabled: true

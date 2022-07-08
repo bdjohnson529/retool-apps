@@ -1,0 +1,44 @@
+id: statistic2
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: currency
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{math.sum(getFilteredTransactions.data.Amount)}}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: ''
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: '{{table2.selectedRow.data.Category}}'
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: '0'
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 5.551115123125783e-17
+    col: 4
+    height: 0.8
+    width: 2
+createdAt: 2022-07-02T06:12:28.046Z

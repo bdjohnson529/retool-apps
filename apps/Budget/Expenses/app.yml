@@ -3,7 +3,8 @@ pageUuid: d59a4cb0-f9b9-11ec-8b20-2ffc6fe146f4
 appTemplate:
   folders:
     - Accounts
-    - Transactions
+    - Expenses
+    - Projection
   rootScreen: null
   version: 2.88.13
   markdownLinkBehavior: auto

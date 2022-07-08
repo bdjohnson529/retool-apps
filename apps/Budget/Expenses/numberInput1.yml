@@ -1,0 +1,58 @@
+id: numberInput1
+type: widget
+subtype: NumberInputWidget
+resourceName: null
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue: null
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{table2.selectedRow.data.projected}}'
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: Projected
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: currency
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    subcontainer: e8749
+    row: 0.6000000000000021
+    height: 1
+    width: 12
+createdAt: 2022-07-08T23:05:35.709Z

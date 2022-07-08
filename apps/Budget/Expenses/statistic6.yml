@@ -1,6 +1,7 @@
-id: statistic2
+id: statistic6
 type: widget
 subtype: StatisticWidget2
+resourceName: null
 template:
   ordered:
     - positiveTrend: '{{ self.value >= 0 }}'
@@ -18,13 +19,13 @@ template:
     - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
     - tooltipText: ''
     - currency: USD
-    - value: '{{math.sum(getFilteredTransactions.data.Amount)}}'
+    - value: '{{math.sum(formatDataAsObject(table3.displayedData).Amount)}}'
     - secondarySignDisplay: trendArrows
     - suffix: ''
     - labelCaption: ''
     - prefix: ''
     - secondaryPadDecimal: false
-    - label: '{{table2.selectedRow.data.Category}}'
+    - label: Total
     - secondaryFormattingStyle: percent
     - icon: ''
     - enableTrend: false
@@ -37,8 +38,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 5.551115123125783e-17
-    col: 4
+    row: 14.600000000000005
+    col: 6
     height: 0.8
     width: 2
-createdAt: 2022-07-02T06:12:28.046Z
+createdAt: 2022-07-08T23:42:41.653Z

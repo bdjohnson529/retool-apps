@@ -28,7 +28,22 @@ template:
                 - showSeparators: true
                 - currency: USD
                 - padDecimal: true
-    - columnWidths: []
+    - columnWidths:
+        - object:
+            id: Category
+            value: 175.18333435058594
+        - object:
+            id: month1
+            value: 195.18333435058594
+        - object:
+            id: category
+            value: 230.83334350585938
+        - object:
+            id: current
+            value: 258.3333282470703
+        - object:
+            id: past
+            value: 229.16668701171875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -39,26 +54,48 @@ template:
     - columnHeaderNames:
         ordered:
           - sum: Total
+          - month1: Current
+          - month2: Past
+          - projected: Projected
+          - current: Current
+          - past: Past
+          - category: Category
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - Category: ''
-          - amount: ''
-          - sum: ''
-          - id: ''
-          - Name: ''
-          - Balance: ''
-          - Pending: ''
           - Total: ''
+          - '''july''': ''
+          - sum: ''
+          - Name: ''
+          - month1: ''
+          - past: ''
+          - month2: ''
+          - Pending: ''
+          - amount: ''
+          - Amount: ''
+          - projected: ''
+          - current: ''
+          - CompareMonth: ''
+          - id: ''
+          - ViewMonth: ''
+          - Balance: ''
+          - category: ''
+          - Category: ''
+          - COALESCE(A.Category,B.Category): ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
         ordered:
-          - Balance: CurrencyDataCell
-          - Pending: CurrencyDataCell
           - Total: CurrencyDataCell
+          - month1: usd_dollars
+          - past: usd_dollars
+          - month2: usd_dollars
+          - Pending: CurrencyDataCell
           - amount: usd_dollars
+          - projected: usd_dollars
+          - current: usd_dollars
+          - Balance: CurrencyDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -78,8 +115,20 @@ template:
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
-          - Category: true
+          - '''july''': true
+          - month1: true
+          - past: true
+          - month2: true
           - amount: true
+          - Amount: true
+          - projected: true
+          - current: true
+          - CompareMonth: true
+          - id: false
+          - ViewMonth: true
+          - category: true
+          - Category: true
+          - COALESCE(A.Category,B.Category): true
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
@@ -90,19 +139,24 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{getExpensesByCategory.data}}'
+    - data: '{{mergeExpenses.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
-    - defaultSortByColumn: amount
+    - defaultSortByColumn: projected
     - paginationOffset: 0
     - columnAlignment:
         ordered:
-          - Balance: right
-          - Pending: right
           - Total: right
+          - month1: right
+          - past: right
+          - month2: right
+          - Pending: right
           - amount: right
+          - projected: right
+          - current: right
+          - Balance: right
     - columnSummaries:
         object: {}
     - sortedDesc: false
@@ -110,7 +164,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: 9
+    - pageSize: 11
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -140,13 +194,28 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: updateProjection
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - totalRowCount: ''
     - recordUpdates:
         array: []
     - newRow: null
     - emptyMessage: No rows found
     - columnEditable:
-        ordered: []
+        ordered:
+          - category: false
+          - current: false
+          - projected: false
+          - past: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -166,8 +235,14 @@ template:
           data: null
           columnName: null
     - columns:
+        - category
+        - current
+        - past
+        - projected
         - Category
+        - Amount
         - amount
+        - id
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
@@ -187,7 +262,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 0.8000000000000003
-    height: 9.6
-    width: 4
+    row: 1.4
+    height: 11.200000000000001
+    width: 8
 createdAt: 2022-07-02T04:05:29.189Z

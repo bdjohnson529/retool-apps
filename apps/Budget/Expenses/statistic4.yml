@@ -1,6 +1,7 @@
-id: statistic1
+id: statistic4
 type: widget
 subtype: StatisticWidget2
+resourceName: null
 template:
   ordered:
     - positiveTrend: '{{ self.value >= 0 }}'
@@ -18,13 +19,13 @@ template:
     - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
     - tooltipText: ''
     - currency: USD
-    - value: '{{math.sum(formatDataAsObject(mergeExpenses.data).current)}}'
+    - value: '{{math.sum(formatDataAsObject(mergeExpenses.data).projected)}}'
     - secondarySignDisplay: trendArrows
     - suffix: ''
     - labelCaption: ''
     - prefix: ''
     - secondaryPadDecimal: false
-    - label: Current
+    - label: Projection
     - secondaryFormattingStyle: percent
     - icon: ''
     - enableTrend: false
@@ -37,8 +38,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: -3.885780586188048e-16
-    col: 2
+    row: -1.27675647831893e-15
+    col: 6
     height: 0.8
     width: 2
-createdAt: 2022-07-02T06:08:40.165Z
+createdAt: 2022-07-08T22:16:59.671Z

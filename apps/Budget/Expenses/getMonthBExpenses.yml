@@ -1,4 +1,4 @@
-id: getFilteredTransactions
+id: getMonthBExpenses
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -16,7 +16,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: "select * from transactions\nwhere \t\tuser_id = {{current_user.id}}\nand       extract(month from \"Transaction_Date\") = {{month3.value}}\nand \t\t\t\"Category\" = {{table2.selectedRow.data.category}}\nand       \"Description\" ilike {{'%' + textInput1.value + '%'}}"
+    - query: "select  \t\"Category\",\n\t\t\t\t\tsum(\"Amount\")  as Amount\nfrom      transactions\nwhere     user_id = {{current_user.id}}\nand       extract(month from \"Transaction_Date\") = {{month2.value}}\ngroup by  \"Category\""
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -82,4 +82,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T04:11:06.601Z
+createdAt: 2022-07-08T21:48:01.182Z
+folder: Expenses

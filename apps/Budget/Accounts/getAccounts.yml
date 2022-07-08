@@ -1,7 +1,7 @@
 id: getAccounts
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:
@@ -18,10 +18,10 @@ template:
     - showFailureToaster: true
     - query: |-
         select * from accounts
-        where user_id = {{ variable0 }}
+        where user_id = {{ current_user.id }}
         order by "Total" desc;
-    - playgroundQueryUuid: 076990f0-b557-4057-a840-01f6420004ec
-    - playgroundQueryId: 6
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -29,9 +29,8 @@ template:
     - recordId: ''
     - retoolVersion: 2.91.13
     - importedQueryInputs:
-        ordered:
-          - variable0: '{{ current_user.id }}'
-    - isImported: true
+        ordered: []
+    - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
@@ -75,7 +74,7 @@ template:
         return data
     - events: []
     - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false

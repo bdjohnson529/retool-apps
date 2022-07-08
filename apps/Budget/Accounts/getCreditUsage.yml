@@ -1,7 +1,7 @@
 id: getCreditUsage
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:
@@ -19,20 +19,18 @@ template:
     - query: |-
         select - sum("Total") / 20000 as credit_usage
         from accounts
-        where user_id = {{ variable0 }}
+        where user_id = {{ current_user.id }}
         and "Total" < 0
-    - playgroundQueryUuid: 1dfa12a8-2036-4901-9cd5-f6b0c649eada
-    - playgroundQueryId: 7
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
     - data: null
     - recordId: ''
-    - retoolVersion: 2.91.13
     - importedQueryInputs:
-        ordered:
-          - variable0: '{{ current_user.id }}'
-    - isImported: true
+        ordered: []
+    - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
@@ -88,4 +86,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T04:21:31.813Z
+createdAt: 2022-07-08T20:50:17.012Z

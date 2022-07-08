@@ -12,6 +12,7 @@ template:
         object: {}
     - showHeader: true
     - hoistFetching: true
+    - _hasSubmitEvents: false
     - scroll: true
     - initialData: '{{table1.selectedRow.data}}'
     - showInEditor: false

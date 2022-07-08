@@ -1,0 +1,14 @@
+version: 43.0.9
+pageUuid: 48076de6-fa37-11ec-a2eb-b38adac358b6
+appTemplate:
+  folders:
+    - Files
+    - Transactions
+    - Accounts
+  rootScreen: null
+  preloadedAppJSLinks:
+    array:
+      - https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js
+  version: 2.93.9
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

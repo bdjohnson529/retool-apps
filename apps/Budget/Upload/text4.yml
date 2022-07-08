@@ -1,0 +1,27 @@
+id: text4
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '**Size :** {{fileButton1.files[''0''].size}} KB'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    subcontainer: 108a4
+    row: 1.5999999999999972
+    height: 0.6
+    width: 12
+createdAt: 2022-07-04T01:49:19.205Z

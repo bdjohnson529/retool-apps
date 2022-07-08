@@ -1,0 +1,54 @@
+id: nextButton1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: bold/interface-arrows-right-alternate
+    - submitTargetId: null
+    - hidden: false
+    - text: Next
+    - showInEditor: false
+    - tooltipText: ''
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - params:
+                ordered:
+                  - wrap: false
+            - event: click
+            - method: showNextView
+            - pluginId: steppedContainer1
+            - pluginInstance: null
+            - type: widget
+            - waitMs: '0'
+            - waitType: debounce
+        - ordered:
+            - method: trigger
+            - enabled: '{{steppedContainer1.currentViewIndex == 0}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: getColumns
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
+    - loading: 'false'
+    - loaderPosition: auto
+    - disabled: >-
+        {{ steppedContainer1.currentViewIndex + 1 ===
+        steppedContainer1.viewKeys.length }}
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    rowGroup: footer
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-07-04T01:53:21.521Z

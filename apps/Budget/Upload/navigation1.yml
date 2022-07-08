@@ -1,0 +1,19 @@
+id: navigation1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: Navigation
+    - pageUuid: 33aa9d42-f9b4-11ec-bdd3-8f47a1ad4624
+    - currentPage: Transactions
+    - childNamespace: navigation1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 2.4
+    width: 12
+createdAt: 2022-07-02T03:14:53.926Z

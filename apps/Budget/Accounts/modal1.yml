@@ -1,0 +1,28 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: rgba(37, 59, 78, 0.6)
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add Account
+style:
+  ordered: []
+position2:
+  position2:
+    row: 9.599999999999998
+    height: 1
+    width: 2
+createdAt: 2022-07-02T01:13:11.171Z

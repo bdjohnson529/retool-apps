@@ -1,0 +1,44 @@
+id: statistic2
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: percent
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{getCreditUsage.data.credit_usage}}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: ''
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: Credit Use
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: '2'
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: -3.885780586188048e-16
+    col: 1
+    height: 0.8
+    width: 1
+createdAt: 2022-07-02T04:21:04.813Z

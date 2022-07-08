@@ -1,0 +1,49 @@
+id: fileButton1
+type: widget
+subtype: FileButtonWidget
+template:
+  ordered:
+    - parsedValue:
+        array: []
+    - iconAfter: ''
+    - parseFiles: true
+    - maxSize: ''
+    - selectionType: single
+    - accept:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - maxCount: null
+    - hideValidationMessage: false
+    - text: Browse
+    - validationMessage: ''
+    - showInEditor: false
+    - parsing: false
+    - tooltipText: ''
+    - formDataKey: '{{ self.id }}'
+    - value:
+        array: []
+    - minSize: ''
+    - styleVariant: outline
+    - _validate: false
+    - invalid: false
+    - files:
+        array: []
+    - iconBefore: bold/programming-browser-search
+    - events: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - minCount: null
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: steppedContainer1
+    subcontainer: 108a4
+    row: -8.326672684688674e-16
+    height: 1
+    width: 6
+createdAt: 2022-07-02T19:03:46.166Z

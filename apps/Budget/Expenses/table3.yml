@@ -17,7 +17,13 @@ template:
                 - showSeparators: true
                 - currency: USD
                 - padDecimal: true
-    - columnWidths: []
+    - columnWidths:
+        - object:
+            id: Amount
+            value: 120.08332824707031
+        - object:
+            id: Description
+            value: 251.06666564941406
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -60,7 +66,15 @@ template:
     - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
-        ordered: []
+        ordered:
+          - id: false
+          - Account_ID: false
+          - Transaction_Date: true
+          - Post_Date: true
+          - Description: true
+          - Category: false
+          - Amount: true
+          - user_id: false
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
@@ -88,7 +102,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: '20'
+    - pageSize: 9
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -141,7 +155,15 @@ template:
           index: null
           data: null
           columnName: null
-    - columns: []
+    - columns:
+        - id
+        - Account_ID
+        - Transaction_Date
+        - Post_Date
+        - Description
+        - Category
+        - Amount
+        - user_id
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null

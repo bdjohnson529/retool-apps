@@ -86,7 +86,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{ new Date().getMonth() + 1 }}'
+    - value: '{{ new Date().getMonth() }}'
     - hiddenByIndex:
         array: []
     - labelCaption: ''

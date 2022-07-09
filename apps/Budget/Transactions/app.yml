@@ -1,10 +1,13 @@
 version: 43.0.9
 pageUuid: 3800e32e-f9af-11ec-ac32-536971ca9dd7
 appTemplate:
+  folders:
+    - Dates
+    - Transactions
+    - Reports
   rootScreen: null
   preloadedAppJSLinks:
     array:
       - https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js
-  version: 2.91.13
+  version: 2.88.13
   markdownLinkBehavior: auto
-  experimentalDataTabEnabled: true

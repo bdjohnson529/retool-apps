@@ -1,4 +1,4 @@
-id: getAllTransactions
+id: getReportTransactions
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -16,9 +16,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        select * from transactions
-        where user_id = {{current_user.id}}
+    - query: "select  \t\t*\nfrom \t\t\t\treports as R\nleft join \treports_transactions as RT\non          R.id = RT.report_id\nleft join   transactions as T\non          RT.transaction_id = T.id\nwhere \t\t  T.user_id = {{current_user.id}}\nand         R.id = {{select4.value}}"
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -84,5 +82,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T02:56:52.253Z
-folder: Transactions
+createdAt: 2022-07-09T17:09:02.188Z
+folder: Reports

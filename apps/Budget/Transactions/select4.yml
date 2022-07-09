@@ -1,20 +1,17 @@
-id: select2
+id: select4
 type: widget
 subtype: SelectWidget2
+resourceName: null
 template:
   ordered:
-    - imageByIndex: ''
-    - _disabledByIndex:
-        - ''
-        - ''
-        - ''
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
     - showSelectionIndicator: true
-    - _values:
-        - Option 1
-        - Option 2
-        - Option 3
-    - iconByIndex: ''
-    - values: '{{item.Category}}'
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{ item.id }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
@@ -24,10 +21,11 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ getCategories.data }}'
+    - data: '{{ getReports.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex: ''
+    - fallbackTextByIndex:
+        array: []
     - textBefore: ''
     - _fallbackTextByIndex:
         - ''
@@ -40,79 +38,68 @@ template:
     - textAfter: ''
     - showInEditor: false
     - _defaultValue: null
-    - showClear: true
+    - showClear: false
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: null
-    - hiddenByIndex: ''
+    - value: '1'
+    - hiddenByIndex:
+        array: []
     - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex:
-        - ''
-        - ''
-        - ''
-    - placeholder: Category
-    - _captionByIndex:
-        - ''
-        - ''
-        - ''
+    - _hiddenByIndex: []
+    - placeholder: Select an option
+    - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: ''
+    - label: Report
     - _hasMigratedNestedItems: true
-    - captionByIndex: ''
+    - captionByIndex:
+        array: []
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex:
-        - ''
-        - ''
-        - ''
+    - _tooltipByIndex: []
     - _colorByIndex:
         - ''
         - ''
         - ''
-    - tooltipByIndex: ''
+    - tooltipByIndex:
+        array: []
     - iconBefore: ''
-    - colorByIndex: ''
+    - colorByIndex:
+        array: []
     - selectedLabel: ''
     - events:
         ordered: []
-    - _ids:
-        - 4d321
-        - fe55c
-        - a1a46
+    - _ids: []
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
-    - labelPosition: left
-    - _labels:
-        - ''
-        - ''
-        - ''
+    - labelPosition: top
+    - _labels: []
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex: ''
+    - disabledByIndex:
+        array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
         - ''
         - ''
         - ''
     - required: false
-    - labels: '{{ item.Category }}'
+    - labels: '{{ item.name }}'
 style:
   ordered: []
 position2:
   position2:
-    row: 1.8
-    col: 3
+    row: 1.2000000000000002
     height: 1
-    width: 3
-createdAt: 2022-07-02T02:41:12.969Z
+    width: 4
+createdAt: 2022-07-09T17:04:32.738Z

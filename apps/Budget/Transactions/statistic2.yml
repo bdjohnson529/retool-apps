@@ -1,6 +1,7 @@
-id: statistic1
+id: statistic2
 type: widget
 subtype: StatisticWidget2
+resourceName: null
 template:
   ordered:
     - positiveTrend: '{{ self.value >= 0 }}'
@@ -18,7 +19,7 @@ template:
     - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
     - tooltipText: ''
     - currency: USD
-    - value: '{{math.sum(formatDataAsObject(table1.displayedData).Amount)}}'
+    - value: '{{math.sum(formatDataAsObject(table2.displayedData).Amount)}}'
     - secondarySignDisplay: trendArrows
     - suffix: ''
     - labelCaption: ''
@@ -37,8 +38,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 14.400000000000011
+    row: 1.3999999999999972
     col: 9
     height: 0.8
     width: 2
-createdAt: 2022-07-02T02:58:18.564Z
+createdAt: 2022-07-09T17:32:55.140Z

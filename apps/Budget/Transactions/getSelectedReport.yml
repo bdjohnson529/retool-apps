@@ -1,4 +1,4 @@
-id: getAllTransactions
+id: getSelectedReport
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -17,8 +17,8 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        select * from transactions
-        where user_id = {{current_user.id}}
+        select * from reports
+        where id = {{select4.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -84,5 +84,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T02:56:52.253Z
-folder: Transactions
+createdAt: 2022-07-09T17:06:27.962Z
+folder: Reports

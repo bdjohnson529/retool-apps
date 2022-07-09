@@ -46,6 +46,7 @@ template:
     - columnFormats:
         ordered:
           - Amount: CurrencyDataCell
+          - amount: usd_dollars
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -85,6 +86,7 @@ template:
     - columnAlignment:
         ordered:
           - Amount: right
+          - amount: right
     - columnSummaries:
         object: {}
     - sortedDesc: false

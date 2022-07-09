@@ -1,4 +1,4 @@
-id: steppedContainer1
+id: container2
 type: widget
 subtype: ContainerWidget2
 resourceName: null
@@ -6,16 +6,12 @@ template:
   ordered:
     - _disabledByIndex:
         - ''
-        - ''
     - heightType: auto
-    - currentViewKey: >-
-        {{ generateSelectedProjection.data.length == 0 ? self.viewKeys[1] :
-        self.viewKeys[0] }}
+    - currentViewKey: null
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
-        - ''
         - ''
     - hidden: false
     - showHeader: false
@@ -28,37 +24,31 @@ template:
         array: []
     - _hiddenByIndex:
         - ''
-        - ''
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none
     - itemMode: static
     - _tooltipByIndex:
         - ''
-        - ''
     - tooltipByIndex:
         array: []
     - showFooter: false
     - _viewKeys:
-        - Update
-        - Create
+        - View 1
     - events:
         ordered: []
     - _ids:
-        - e8749
-        - 253c1
+        - '8e490'
     - viewKeys:
         array: []
     - iconPositionByIndex:
         array: []
     - _iconPositionByIndex:
         - ''
-        - ''
     - loading: false
     - overflowType: scroll
     - disabled: false
     - _labels:
-        - ''
         - ''
     - disabledByIndex:
         array: []
@@ -70,8 +60,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 1.3999999999999977
-    col: 7
-    height: 0.2
-    width: 3
-createdAt: 2022-07-08T23:15:40.517Z
+    row: 13.999999999999998
+    height: 13
+    width: 6
+createdAt: 2022-07-09T16:18:12.941Z

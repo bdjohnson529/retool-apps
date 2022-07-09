@@ -1,50 +1,24 @@
-id: table2
+id: table4
 type: widget
 subtype: TableWidget
+resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
-    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered:
-          - Balance:
-              ordered:
-                - showSeparators: true
-                - currency: USD
-                - padDecimal: true
-                - decimalPlaces: ''
-          - Pending:
-              ordered:
-                - showSeparators: true
-                - currency: USD
-                - padDecimal: true
-          - Total:
-              ordered:
-                - showSeparators: true
-                - currency: USD
-                - padDecimal: true
+        ordered: []
     - columnWidths:
         - object:
+            id: Description
+            value: 220.3333282470703
+        - object:
             id: Category
-            value: 175.18333435058594
-        - object:
-            id: month1
-            value: 195.18333435058594
-        - object:
-            id: category
-            value: 230.83334350585938
-        - object:
-            id: current
-            value: 258.3333282470703
-        - object:
-            id: past
-            value: 229.16668701171875
-    - showSummaryFooter: false
+            value: 163.58334350585938
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -52,111 +26,68 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered:
-          - sum: Total
-          - month1: Current
-          - month2: Past
-          - projected: Projected
-          - current: Current
-          - past: Past
-          - category: Category
+        ordered: []
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - Total: ''
-          - '''july''': ''
-          - sum: ''
-          - Name: ''
-          - month1: ''
+          - Account_ID: ''
+          - Post_Date: ''
+          - Transaction_Date: ''
+          - user_id: ''
           - past: ''
-          - month2: ''
-          - Pending: ''
-          - amount: ''
           - Amount: ''
           - projected: ''
           - current: ''
-          - CompareMonth: ''
           - id: ''
-          - ViewMonth: ''
-          - Balance: ''
+          - Description: ''
           - category: ''
           - Category: ''
-          - COALESCE(A.Category,B.Category): ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered:
-          - Total: CurrencyDataCell
-          - month1: usd_dollars
-          - past: usd_dollars
-          - month2: usd_dollars
-          - Pending: CurrencyDataCell
-          - amount: usd_dollars
-          - projected: usd_dollars
-          - current: usd_dollars
-          - Balance: CurrencyDataCell
+        ordered: []
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
-    - _columnVisibility:
-        ordered:
-          - id: false
-          - sum: true
     - _columnSummaryTypes:
-        ordered:
-          - Balance: sum
-          - Pending: sum
-          - Total: sum
+        ordered: []
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
-    - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
-          - '''july''': true
-          - month1: true
-          - past: false
-          - month2: true
-          - amount: true
+          - Account_ID: false
+          - Post_Date: true
+          - Transaction_Date: true
+          - user_id: false
+          - past: true
           - Amount: true
           - projected: true
           - current: true
-          - CompareMonth: true
           - id: false
-          - ViewMonth: true
+          - Description: true
           - category: true
           - Category: true
-          - COALESCE(A.Category,B.Category): true
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
-    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{mergeExpenses.data}}'
+    - data: '{{ getFilteredTransactionsMonth2.data }}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
-    - defaultSortByColumn: projected
+    - defaultSortByColumn: ''
     - paginationOffset: 0
     - columnAlignment:
-        ordered:
-          - Total: right
-          - month1: right
-          - past: right
-          - month2: right
-          - Pending: right
-          - amount: right
-          - projected: right
-          - current: right
-          - Balance: right
+        ordered: []
     - columnSummaries:
         object: {}
     - sortedDesc: false
@@ -164,7 +95,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: 11
+    - pageSize: 12
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -175,14 +106,10 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered:
-          - Balance: ''
-          - Pending: ''
-          - Total: ''
+        ordered: []
     - checkboxRowSelect: true
-    - _compatibilityMode: false
+    - _compatibilityMode: true
     - showColumnBorders: false
-    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -194,30 +121,13 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - events:
-        - ordered:
-            - event: saveChanges
-            - type: datasource
-            - method: trigger
-            - pluginId: updateProjection
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
     - totalRowCount: ''
     - recordUpdates:
         array: []
     - newRow: null
     - emptyMessage: No rows found
     - columnEditable:
-        ordered:
-          - category: false
-          - current: false
-          - projected: false
-          - past: false
-    - _viewerColumnSummaryTypes:
-        object: {}
+        ordered: []
     - filters:
         array: []
     - displayedDataIndices: null
@@ -226,7 +136,7 @@ template:
     - columnMappers:
         ordered: []
     - showClearSelection: false
-    - doubleClickToEdit: true
+    - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -235,18 +145,21 @@ template:
           data: null
           columnName: null
     - columns:
+        - id
         - category
         - current
-        - past
         - projected
+        - past
+        - Account_ID
+        - Transaction_Date
+        - Post_Date
+        - Description
         - Category
         - Amount
-        - amount
-        - id
+        - user_id
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -262,7 +175,9 @@ style:
   ordered: []
 position2:
   position2:
-    row: 1.4
-    height: 11.200000000000001
-    width: 6
-createdAt: 2022-07-02T04:05:29.189Z
+    container: container2
+    subcontainer: '8e490'
+    row: 1.0000000000000002
+    height: 9.6
+    width: 12
+createdAt: 2022-07-09T16:18:14.151Z

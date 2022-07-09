@@ -1,33 +1,21 @@
-id: table1
+id: table2
 type: widget
 subtype: TableWidget
+resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
-    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered:
-          - Amount:
-              ordered:
-                - showSeparators: true
-                - currency: USD
-                - padDecimal: true
+        ordered: []
     - columnWidths:
         - object:
-            id: Post_Date
-            value: 130.7333221435547
-        - object:
             id: Category
-            value: 388.9666748046875
-        - object:
-            id: Description
-            value: 385.73333740234375
-    - showSummaryFooter: false
+            value: 250.23333740234375
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -39,61 +27,60 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - id: ''
+          - report_id: ''
+          - name: ''
           - Account_ID: ''
-          - Transaction_Date: ''
           - Post_Date: ''
+          - Transaction_Date: ''
+          - user_id: ''
+          - Amount: ''
+          - id: ''
+          - transaction_id: ''
           - Description: ''
           - Category: ''
-          - Amount: ''
-          - user_id: ''
     - columnFrozenAlignments:
         ordered: []
-    - allowMultiRowSelect: true
+    - allowMultiRowSelect: false
     - columnFormats:
         ordered:
-          - Amount: CurrencyDataCell
+          - Amount: usd_dollars
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
-    - _columnVisibility:
-        ordered:
-          - id: false
-          - Account_ID: false
     - _columnSummaryTypes:
-        ordered:
-          - Amount: sum
+        ordered: []
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
-    - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
-          - id: false
+          - report_id: false
+          - name: false
           - Account_ID: false
-          - Transaction_Date: true
           - Post_Date: true
+          - Transaction_Date: true
+          - user_id: false
+          - Amount: true
+          - id: false
+          - transaction_id: false
           - Description: true
           - Category: true
-          - Amount: true
-          - user_id: false
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
-    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{getFilteredTransactions.data}}'
+    - data: '{{ getReportTransactions.data }}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
-    - defaultSortByColumn: ''
+    - defaultSortByColumn: Transaction_Date
     - paginationOffset: 0
     - columnAlignment:
         ordered:
@@ -105,7 +92,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: 8
+    - pageSize: 11
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -116,12 +103,10 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered:
-          - Amount: ''
+        ordered: []
     - checkboxRowSelect: true
-    - _compatibilityMode: false
+    - _compatibilityMode: true
     - showColumnBorders: false
-    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -140,8 +125,6 @@ template:
     - emptyMessage: No rows found
     - columnEditable:
         ordered: []
-    - _viewerColumnSummaryTypes:
-        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -150,7 +133,7 @@ template:
     - columnMappers:
         ordered: []
     - showClearSelection: false
-    - doubleClickToEdit: true
+    - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -160,6 +143,9 @@ template:
           columnName: null
     - columns:
         - id
+        - name
+        - report_id
+        - transaction_id
         - Account_ID
         - Transaction_Date
         - Post_Date
@@ -170,7 +156,6 @@ template:
     - defaultSelectedRow: none
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -186,7 +171,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.200000000000008
-    height: 9.4
+    row: 2.9999999999999996
+    height: 9
     width: 11
-createdAt: 2022-07-02T02:36:45.229Z
+createdAt: 2022-07-09T17:11:38.625Z

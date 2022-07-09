@@ -1,0 +1,21 @@
+id: divider1
+type: widget
+subtype: DividerWidget
+resourceName: null
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - horizontalAlign: center
+    - text: ''
+    - textSize: default
+style:
+  ordered: []
+position2:
+  position2:
+    row: 13.000000000000002
+    height: 0.2
+    width: 12
+createdAt: 2022-07-09T17:02:05.663Z

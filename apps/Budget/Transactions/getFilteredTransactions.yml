@@ -1,7 +1,7 @@
 id: getFilteredTransactions
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 8ade152e-fd15-4277-a764-fde3e53cf749
+resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
 resourceDisplayName: budget
 template:
   ordered:
@@ -16,7 +16,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: "select \t\t\t*\nfrom \t\t\t\ttransactions\nwhere \t\t\tuser_id = {{current_user.id}}\nand \t\t\t\t\"Category\" = {{select2.value}}"
+    - query: "select * from transactions\nwhere \t\tuser_id = {{current_user.id}}\nand       \"Transaction_Date\" > {{dateRange1.value.start}}\nand       \"Transaction_Date\" < {{dateRange1.value.end}}\nand \t\t\t(\"Category\" ilike {{'%' + select3.value + '%'}} or {{!select3.value}})\nand       \"Description\" ilike {{'%' + textInput1.value + '%'}}\nand       id not in (select transaction_id from reports_transactions where report_id = {{select4.value}})"
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -83,3 +83,4 @@ template:
     - updateSetValueDynamically: false
     - notificationDuration: ''
 createdAt: 2022-07-02T02:32:29.566Z
+folder: Transactions

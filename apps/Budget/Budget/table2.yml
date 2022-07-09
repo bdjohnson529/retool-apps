@@ -30,15 +30,18 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - Month: ''
           - Account_ID: ''
           - Post_Date: ''
           - date: ''
           - Transaction_Date: ''
+          - user_id: ''
           - amount: ''
           - Amount: ''
           - id: ''
           - Description: ''
           - description: ''
+          - Year: ''
           - Category: ''
     - columnFrozenAlignments:
         ordered: []
@@ -46,6 +49,7 @@ template:
     - columnFormats:
         ordered:
           - Amount: CurrencyDataCell
+          - amount: usd_dollars
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -63,7 +67,12 @@ template:
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
+          - id: false
+          - user_id: false
           - Category: true
+          - Amount: true
+          - Month: false
+          - Year: false
           - amount: true
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
@@ -75,7 +84,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{getExpensesByCategory.data}}'
+    - data: '{{getProjections.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -85,6 +94,7 @@ template:
     - columnAlignment:
         ordered:
           - Amount: right
+          - amount: right
     - columnSummaries:
         object: {}
     - sortedDesc: false
@@ -148,6 +158,11 @@ template:
     - columns:
         - Category
         - amount
+        - id
+        - user_id
+        - Amount
+        - Month
+        - Year
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
@@ -169,6 +184,6 @@ position2:
   position2:
     row: 1.5999999999999994
     col: 3
-    height: 9.399999999999999
+    height: 8.8
     width: 4
 createdAt: 2022-07-02T07:10:33.102Z

@@ -18,7 +18,7 @@ template:
     - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
     - tooltipText: ''
     - currency: USD
-    - value: '{{math.sum(getIncome.data.amount)+math.sum(getExpenses.data.Amount)}}'
+    - value: '{{math.sum(getIncome.data.amount)+math.sum(getProjections.data.Amount)}}'
     - secondarySignDisplay: trendArrows
     - suffix: ''
     - labelCaption: ''

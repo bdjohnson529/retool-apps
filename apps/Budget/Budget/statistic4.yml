@@ -18,7 +18,7 @@ template:
     - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
     - tooltipText: ''
     - currency: USD
-    - value: '{{math.sum(getExpenses.data.Amount)}}'
+    - value: '{{math.sum(getProjections.data.Amount)}}'
     - style:
         ordered:
           - color: rgba(168, 36, 26, 1)

@@ -1,4 +1,4 @@
-id: getExpensesByCategory
+id: getProjections
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 8bd6c54f-e463-4ffb-9637-f734b72603ea
@@ -16,7 +16,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: "select  \t\"Category\",\n\t\t\t\t\tsum(\"Amount\")  as Amount\nfrom      transactions\nwhere     user_id = {{current_user.id}}\nand       extract(year from \"Transaction_Date\") = {{ new Date().getFullYear() }}\nand       extract(month from \"Transaction_Date\") = {{ new Date().getMonth() + 1}}\ngroup by  \"Category\""
+    - query: "select \t\t*\nfrom \t\t\tprojections\nwhere     user_id = {{current_user.id}}\nand       \"Year\" = {{ new Date().getFullYear() }}\nand       \"Month\" = {{ new Date().getMonth() + 1}}"
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -82,5 +82,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-07-02T03:59:44.476Z
+createdAt: 2022-07-08T23:57:56.139Z
 folder: Transactions

@@ -79,7 +79,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{ getFilteredTransactions.data }}'
+    - data: '{{ getFilteredTransactionsMonth1.data }}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -175,7 +175,9 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.600000000000012
+    container: container1
+    subcontainer: '8e490'
+    row: 1.00000000000001
     height: 9.6
-    width: 8
+    width: 12
 createdAt: 2022-07-08T23:34:48.360Z

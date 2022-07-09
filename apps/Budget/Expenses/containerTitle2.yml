@@ -1,4 +1,4 @@
-id: formTitle1
+id: containerTitle2
 type: widget
 subtype: TextWidget2
 resourceName: null
@@ -12,7 +12,7 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '### {{table2.selectedRow.data.category}}'
+    - value: '#### Container title'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -20,8 +20,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: steppedContainer1
-    subcontainer: e8749
+    container: container2
+    rowGroup: header
     height: 0.6
-    width: 7
-createdAt: 2022-07-08T23:04:54.238Z
+    width: 12
+createdAt: 2022-07-09T16:18:15.145Z

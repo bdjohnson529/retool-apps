@@ -5,6 +5,7 @@ appTemplate:
     - Accounts
     - Expenses
     - Projection
+    - Comparison
   rootScreen: null
   version: 2.88.13
   markdownLinkBehavior: auto

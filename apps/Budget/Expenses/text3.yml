@@ -1,4 +1,4 @@
-id: text1
+id: text3
 type: widget
 subtype: TextWidget2
 resourceName: null
@@ -12,7 +12,7 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: Estimated
+    - value: '### {{table2.selectedRow.data.category}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -20,9 +20,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: steppedContainer1
-    subcontainer: e8749
-    row: 1.600000000000001
-    height: 0.6
-    width: 4
-createdAt: 2022-07-08T23:06:44.065Z
+    row: 13.399999999999999
+    height: 1
+    width: 6
+createdAt: 2022-07-09T16:18:14.509Z

@@ -1,4 +1,4 @@
-id: text2
+id: containerTitle1
 type: widget
 subtype: TextWidget2
 resourceName: null
@@ -12,7 +12,7 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '### {{table2.selectedRow.data.category}}'
+    - value: '#### Container title'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -20,7 +20,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 13.600000000000003
+    container: container1
+    rowGroup: header
     height: 0.6
-    width: 2
-createdAt: 2022-07-08T23:34:51.219Z
+    width: 12
+createdAt: 2022-07-09T16:17:07.990Z

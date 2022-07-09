@@ -1,59 +1,58 @@
-id: numberInput1
+id: textInput2
 type: widget
-subtype: NumberInputWidget
+subtype: TextInputWidget2
 resourceName: null
 template:
   ordered:
+    - spellCheck: false
     - readOnly: false
     - iconAfter: ''
-    - max: null
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
     - hidden: false
     - customValidation: ''
-    - showSeparators: true
+    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
-    - _defaultValue: null
-    - allowNull: false
+    - _defaultValue: ''
     - showClear: false
+    - pattern: ''
     - tooltipText: ''
-    - currency: USD
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{table2.selectedRow.data.projected}}'
+    - value: ''
     - labelCaption: ''
-    - min: null
     - labelWidth: '33'
+    - autoFill: ''
     - placeholder: Enter value
-    - showStepper: true
-    - label: Projection
+    - label: Description
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - format: currency
     - iconBefore: ''
-    - textAlign: left
+    - minLength: null
     - inputTooltip: ''
     - events:
         ordered: []
+    - autoCapitalize: none
     - loading: false
     - disabled: false
     - labelPosition: top
-    - decimalPlaces: null
     - labelWrap: false
-    - padDecimal: false
     - maintainSpaceWhenHidden: false
     - required: false
 style:
   ordered: []
 position2:
   position2:
-    container: steppedContainer1
-    subcontainer: e8749
-    row: 0.6000000000000022
-    col: 5
+    container: container2
+    subcontainer: '8e490'
+    row: 5.551115123125783e-17
+    col: 4
     height: 1
-    width: 6
-createdAt: 2022-07-08T23:05:35.709Z
+    width: 3
+createdAt: 2022-07-09T16:18:14.705Z

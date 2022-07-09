@@ -47,6 +47,7 @@ template:
     - columnFormats:
         ordered:
           - Amount: CurrencyDataCell
+          - amount: usd_dollars
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -64,11 +65,11 @@ template:
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
-          - id: true
+          - id: false
           - date: true
           - description: true
           - amount: true
-          - user_id: true
+          - user_id: false
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
@@ -89,6 +90,7 @@ template:
     - columnAlignment:
         ordered:
           - Amount: right
+          - amount: right
     - columnSummaries:
         object: {}
     - sortedDesc: false

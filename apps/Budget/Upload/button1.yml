@@ -1,7 +1,6 @@
 id: button1
 type: widget
 subtype: ButtonWidget2
-resourceName: null
 template:
   ordered:
     - horizontalAlign: stretch
@@ -16,15 +15,16 @@ template:
     - submit: false
     - iconBefore: ''
     - events:
-        - event: click
-          type: datasource
-          method: trigger
-          pluginId: uploadTransactions
-          targetId: null
-          params:
-            ordered: []
-          waitType: debounce
-          waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: uploadTransactions
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false

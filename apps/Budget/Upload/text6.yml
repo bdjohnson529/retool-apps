@@ -1,0 +1,25 @@
+id: text6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Most Recent Transactions'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 8.4
+    height: 0.6
+    width: 3
+createdAt: 2022-08-01T23:33:17.308Z

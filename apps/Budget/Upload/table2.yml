@@ -1,4 +1,4 @@
-id: table1
+id: table2
 type: widget
 subtype: TableWidget
 template:
@@ -12,10 +12,7 @@ template:
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []
-    - columnWidths:
-        - object:
-            id: Description
-            value: 264.066650390625
+    - columnWidths: []
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -27,22 +24,7 @@ template:
         ordered: []
     - alwaysShowPaginator: false
     - columnColors:
-        ordered:
-          - oid: ''
-          - command: ''
-          - Account_ID: ''
-          - rowAsArray: ''
-          - Post_Date: ''
-          - RowCtor: ''
-          - Transaction_Date: ''
-          - user_id: ''
-          - rowCount: ''
-          - Amount: ''
-          - rows: ''
-          - fields: ''
-          - _types: ''
-          - Description: ''
-          - Category: ''
+        ordered: []
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -53,21 +35,8 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
-          - oid: true
-          - command: true
+          - id: false
           - Account_ID: false
-          - rowAsArray: true
-          - Post_Date: true
-          - RowCtor: true
-          - Transaction_Date: true
-          - user_id: false
-          - rowCount: true
-          - Amount: true
-          - rows: true
-          - fields: true
-          - _types: true
-          - Description: true
-          - Category: true
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:
@@ -76,22 +45,7 @@ template:
     - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
-        ordered:
-          - oid: true
-          - command: true
-          - Account_ID: false
-          - rowAsArray: true
-          - Post_Date: true
-          - RowCtor: true
-          - Transaction_Date: true
-          - user_id: false
-          - rowCount: true
-          - Amount: true
-          - rows: true
-          - fields: true
-          - _types: true
-          - Description: true
-          - Category: true
+        ordered: []
     - selectedPageIndex: '0'
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
@@ -102,7 +56,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{ transformTransactions.data}}'
+    - data: '{{ getLastTransaction.data }}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -118,7 +72,7 @@ template:
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: 9
+    - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -131,7 +85,7 @@ template:
     - _columnSummaryValues:
         ordered: []
     - checkboxRowSelect: true
-    - _compatibilityMode: true
+    - _compatibilityMode: false
     - showColumnBorders: false
     - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
@@ -162,7 +116,7 @@ template:
     - columnMappers:
         ordered: []
     - showClearSelection: false
-    - doubleClickToEdit: false
+    - doubleClickToEdit: true
     - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -170,41 +124,11 @@ template:
           index: null
           data: null
           columnName: null
-    - columns:
-        - command
-        - rowCount
-        - oid
-        - rows
-        - fields
-        - _types
-        - RowCtor
-        - rowAsArray
-        - Transaction_Date
-        - Post_Date
-        - Description
-        - Category
-        - Amount
-        - Account_ID
-        - user_id
+    - columns: []
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns:
-        - command
-        - rowCount
-        - oid
-        - rows
-        - fields
-        - _types
-        - RowCtor
-        - rowAsArray
-        - Transaction_Date
-        - Post_Date
-        - Description
-        - Category
-        - Amount
-        - Account_ID
-        - user_id
+    - _columns: []
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -220,9 +144,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: steppedContainer1
-    subcontainer: 17f58
-    row: 0.6
+    row: 9.2
     height: 8
-    width: 12
-createdAt: 2022-07-08T20:27:15.726Z
+    width: 8
+createdAt: 2022-08-01T23:30:58.212Z

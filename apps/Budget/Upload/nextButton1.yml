@@ -36,16 +36,17 @@ template:
             - event: click
             - type: datasource
             - waitMs: '0'
-        - method: trigger
-          enabled: '{{steppedContainer1.currentViewIndex == 1}}'
-          params:
-            ordered: []
-          targetId: null
-          pluginId: transformTransactions
-          waitType: debounce
-          event: click
-          type: datasource
-          waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: '{{steppedContainer1.currentViewIndex == 1}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: transformTransactions
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
     - loading: 'false'
     - loaderPosition: auto
     - disabled: >-

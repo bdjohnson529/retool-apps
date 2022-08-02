@@ -36,14 +36,17 @@ template:
             id: month1
             value: 195.18333435058594
         - object:
-            id: category
-            value: 230.83334350585938
-        - object:
             id: current
-            value: 258.3333282470703
+            value: 207.33334350585938
+        - object:
+            id: category
+            value: 311.8333282470703
         - object:
             id: past
-            value: 229.16668701171875
+            value: 189.16665649414062
+        - object:
+            id: projected
+            value: 163.6666717529297
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -101,8 +104,20 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - '''july''': true
+          - month1: true
+          - past: true
+          - month2: true
+          - amount: true
+          - Amount: true
+          - projected: true
+          - current: true
+          - CompareMonth: true
           - id: false
-          - sum: true
+          - ViewMonth: true
+          - category: true
+          - Category: true
+          - COALESCE(A.Category,B.Category): true
     - _columnSummaryTypes:
         ordered:
           - Balance: sum
@@ -246,7 +261,12 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - category
+        - current
+        - past
+        - projected
+        - id
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -262,7 +282,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 1.4
+    row: 1.4000000000000004
     height: 11.200000000000001
-    width: 6
+    width: 7
 createdAt: 2022-07-02T04:05:29.189Z

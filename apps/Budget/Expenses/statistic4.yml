@@ -1,7 +1,6 @@
 id: statistic4
 type: widget
 subtype: StatisticWidget2
-resourceName: null
 template:
   ordered:
     - positiveTrend: '{{ self.value >= 0 }}'
@@ -39,7 +38,7 @@ style:
 position2:
   position2:
     row: -1.27675647831893e-15
-    col: 4
+    col: 6
     height: 0.8
-    width: 2
+    width: 1
 createdAt: 2022-07-08T22:16:59.671Z

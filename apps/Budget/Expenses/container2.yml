@@ -1,7 +1,6 @@
 id: container2
 type: widget
 subtype: ContainerWidget2
-resourceName: null
 template:
   ordered:
     - _disabledByIndex:
@@ -60,7 +59,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 13.999999999999998
+    row: 14.799999999999997
     height: 13
     width: 6
 createdAt: 2022-07-09T16:18:12.941Z

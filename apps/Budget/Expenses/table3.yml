@@ -1,13 +1,13 @@
 id: table3
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -19,6 +19,7 @@ template:
         - object:
             id: Category
             value: 163.58334350585938
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -50,11 +51,26 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - Account_ID: false
+          - Post_Date: true
+          - Transaction_Date: true
+          - user_id: false
+          - past: true
+          - Amount: true
+          - projected: true
+          - current: true
+          - id: false
+          - Description: true
+          - category: true
+          - Category: true
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -75,6 +91,7 @@ template:
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -110,6 +127,7 @@ template:
     - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -128,6 +146,8 @@ template:
     - emptyMessage: No rows found
     - columnEditable:
         ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -160,6 +180,19 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - id
+        - category
+        - current
+        - projected
+        - past
+        - Account_ID
+        - Transaction_Date
+        - Post_Date
+        - Description
+        - Category
+        - Amount
+        - user_id
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []

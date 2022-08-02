@@ -7,5 +7,5 @@ appTemplate:
     - Projection
     - Comparison
   rootScreen: null
-  version: 2.88.13
+  version: 2.93.9
   markdownLinkBehavior: auto

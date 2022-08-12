@@ -24,7 +24,14 @@ template:
         ordered: []
     - alwaysShowPaginator: false
     - columnColors:
-        ordered: []
+        ordered:
+          - id: ''
+          - name: ''
+          - company: ''
+          - end_date: ''
+          - start_date: ''
+          - annual_minimum: ''
+          - deposit_billed: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false

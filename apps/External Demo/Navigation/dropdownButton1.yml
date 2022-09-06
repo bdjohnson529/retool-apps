@@ -5,7 +5,6 @@ template:
   ordered:
     - _disabledByIndex:
         - ''
-        - false
     - horizontalAlign: stretch
     - iconByIndex:
         array: []
@@ -13,7 +12,6 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
-        - bold/interface-user-circle
     - hidden: false
     - data:
         array: []
@@ -24,9 +22,7 @@ template:
         array: []
     - _hiddenByIndex:
         - ''
-        - 'true'
     - _captionByIndex:
-        - ''
         - ''
     - styleVariant: outline
     - _hasMigratedNestedItems: true
@@ -35,20 +31,31 @@ template:
     - itemMode: static
     - _tooltipByIndex:
         - ''
-        - ''
     - tooltipByIndex:
         array: []
     - icon: bold/interface-setting-cog
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: 56c96
+            - params:
+                ordered:
+                  - url: https://{{window.location.hostname}}/logout
+                  - options:
+                      ordered:
+                        - forceReload: true
+                        - newTab: false
+            - waitType: debounce
+            - waitMs: '0'
     - _ids:
         - 56c96
-        - '41687'
     - overlayMaxHeight: 375
     - disabled: false
     - _labels:
         - Logout
-        - '{{current_user.fullName}}'
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false

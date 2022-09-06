@@ -1,0 +1,65 @@
+id: dropdownButton1
+type: widget
+subtype: DropdownButtonWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - false
+    - horizontalAlign: stretch
+    - iconByIndex:
+        array: []
+    - iconPosition: left
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - bold/interface-user-circle
+    - hidden: false
+    - data:
+        array: []
+    - text: Settings
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - 'true'
+    - _captionByIndex:
+        - ''
+        - ''
+    - styleVariant: outline
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - icon: bold/interface-setting-cog
+    - events:
+        ordered: []
+    - _ids:
+        - 56c96
+        - '41687'
+    - overlayMaxHeight: 375
+    - disabled: false
+    - _labels:
+        - Logout
+        - '{{current_user.fullName}}'
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-09-06T18:20:44.191Z

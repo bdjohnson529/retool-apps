@@ -7,7 +7,7 @@ template:
     - valueToCopy: ''
     - menuItems:
         - ordered:
-            - title: Page 1
+            - title: Pages
             - hidden: ''
             - clickable:
                 ordered:
@@ -24,9 +24,47 @@ template:
                   - internalUrlPath: 8010fd0c-2d8a-11ed-a588-bbcea3383e33
                   - exportFileName: ''
                   - disabled: ''
-            - menuItems: []
+            - menuItems:
+                - ordered:
+                    - title: Page 1
+                    - clickable:
+                        ordered:
+                          - valueToCopy: ''
+                          - internalUrlHashParams: ''
+                          - exportFileType: csv
+                          - buttonType: action
+                          - exportTemplate: null
+                          - url: ''
+                          - newWindow: false
+                          - exportQuery: ''
+                          - action: ''
+                          - internalUrlQuery: ''
+                          - internalUrlPath: ''
+                          - exportFileName: ''
+                          - disabled: ''
+                    - hidden: ''
+                    - menuItems: []
+                - ordered:
+                    - title: Page 2
+                    - clickable:
+                        ordered:
+                          - valueToCopy: ''
+                          - internalUrlHashParams: ''
+                          - exportFileType: csv
+                          - buttonType: action
+                          - exportTemplate: null
+                          - url: ''
+                          - newWindow: false
+                          - exportQuery: ''
+                          - action: ''
+                          - internalUrlQuery: ''
+                          - internalUrlPath: ''
+                          - exportFileName: ''
+                          - disabled: ''
+                    - hidden: ''
+                    - menuItems: []
         - ordered:
-            - title: Page 2
+            - title: Other Apps
             - clickable:
                 ordered:
                   - valueToCopy: ''
@@ -64,7 +102,6 @@ style:
 position2:
   position2:
     container: moduleContainer
-    col: 3
     height: 1
-    width: 5
+    width: 8
 createdAt: 2022-09-06T02:21:06.299Z

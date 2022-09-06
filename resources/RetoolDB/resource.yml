@@ -1,0 +1,26 @@
+databaseName: retooldb
+databaseUsername: retool_internal_user
+displayName: RetoolDB
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: postgres
+options:
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: 77b484c9-539e-4c49-9834-ba9ed5d1d73f
+version: 1.0.0

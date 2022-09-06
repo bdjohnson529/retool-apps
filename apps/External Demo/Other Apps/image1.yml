@@ -1,0 +1,31 @@
+id: image1
+type: widget
+subtype: ImageWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: center
+    - srcWidth: null
+    - clickable: false
+    - src: https://place.dog/300/200
+    - hidden: false
+    - srcHeight: null
+    - showInEditor: false
+    - tooltipText: ''
+    - fit: cover
+    - aspectRatio: null
+    - storageBlobId: ''
+    - altText: ''
+    - dbBlobId: 62546a56-ed3c-4e14-8ae8-843dce50d943
+    - events:
+        ordered: []
+    - srcType: dbBlobId
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.6
+    height: 3
+    width: 3
+createdAt: 2022-09-06T02:23:04.260Z

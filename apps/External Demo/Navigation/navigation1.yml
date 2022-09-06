@@ -32,14 +32,14 @@ template:
                           - valueToCopy: ''
                           - internalUrlHashParams: ''
                           - exportFileType: csv
-                          - buttonType: action
+                          - buttonType: internal-url
                           - exportTemplate: null
                           - url: ''
                           - newWindow: false
                           - exportQuery: ''
                           - action: ''
                           - internalUrlQuery: ''
-                          - internalUrlPath: ''
+                          - internalUrlPath: 8010fd0c-2d8a-11ed-a588-bbcea3383e33
                           - exportFileName: ''
                           - disabled: ''
                     - hidden: ''
@@ -51,14 +51,14 @@ template:
                           - valueToCopy: ''
                           - internalUrlHashParams: ''
                           - exportFileType: csv
-                          - buttonType: action
+                          - buttonType: internal-url
                           - exportTemplate: null
                           - url: ''
                           - newWindow: false
                           - exportQuery: ''
                           - action: ''
                           - internalUrlQuery: ''
-                          - internalUrlPath: ''
+                          - internalUrlPath: 82c37aca-2d8a-11ed-b520-c75936c1de81
                           - exportFileName: ''
                           - disabled: ''
                     - hidden: ''

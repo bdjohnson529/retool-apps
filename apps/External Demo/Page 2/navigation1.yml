@@ -1,0 +1,18 @@
+id: navigation1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: Navigation
+    - pageUuid: 8c65d2e4-2d8a-11ed-b968-4776ebd405d7
+    - childNamespace: navigation1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 2.4
+    width: 12
+createdAt: 2022-09-06T02:22:13.585Z

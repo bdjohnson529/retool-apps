@@ -24,7 +24,11 @@ template:
         ordered: []
     - alwaysShowPaginator: false
     - columnColors:
-        ordered: []
+        ordered:
+          - id: ''
+          - name: ''
+          - email: ''
+          - sales: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false

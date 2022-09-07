@@ -2,7 +2,6 @@ id: query1
 type: datasource
 subtype: SqlQueryUnified
 resourceName: 5d90a894-e195-43d9-92e0-6ff5921f1307
-resourceDisplayName: Retool DB
 template:
   ordered:
     - queryRefreshTime: ''
@@ -19,6 +18,7 @@ template:
     - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null

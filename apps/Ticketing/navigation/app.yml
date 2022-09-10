@@ -1,0 +1,8 @@
+version: 43.0.9
+pageUuid: d01664c1-762b-4df6-9987-48bfd4131415
+appTemplate:
+  rootScreen: null
+  isGlobalWidget: true
+  version: 2.99.1
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

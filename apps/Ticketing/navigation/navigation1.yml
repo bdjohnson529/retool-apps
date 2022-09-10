@@ -1,0 +1,69 @@
+id: navigation1
+type: widget
+subtype: NavigationWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - valueToCopy: ''
+    - menuItems:
+        - ordered:
+            - title: Dashboard
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: f80a2d14-312d-11ed-8861-df043eb7b0ee
+                  - exportFileName: ''
+                  - disabled: ''
+            - menuItems: []
+        - ordered:
+            - title: Account Detail
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: f208a562-312d-11ed-82a6-db8fae4b28cc
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    height: 1
+    width: 10
+createdAt: 2022-09-10T18:18:10.224Z

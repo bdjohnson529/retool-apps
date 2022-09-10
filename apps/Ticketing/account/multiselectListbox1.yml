@@ -1,0 +1,125 @@
+id: multiselectListbox1
+type: widget
+subtype: MultiselectListboxWidget
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - showActions: false
+    - showSelectionIndicator: true
+    - _values:
+        - Sixtine Vervial
+        - Anne-Laure
+        - Cybil
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ [self.values[0]] }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '20'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _captionByIndex:
+        - Data scientist
+        - Product maanger
+        - Developer
+    - itemAdornmentSize: auto
+    - searchTerm: ''
+    - label: Contacts
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - ea936
+        - '60830'
+        - cbd2a
+    - emptyMessage: ''
+    - selectedLabels:
+        array: []
+    - disabled: '{{tabbedContainer1.currentViewKey == "Create Ticket"}}'
+    - labelPosition: left
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 1aeb9
+    row: 1
+    height: 4
+    width: 12
+createdAt: 2022-09-10T18:09:28.259Z

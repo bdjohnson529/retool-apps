@@ -1,0 +1,119 @@
+id: listbox1
+type: widget
+subtype: ListboxWidget
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - showSelectionIndicator: true
+    - _values:
+        - Open
+        - Claimed
+        - Closed
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - allowDeselect: false
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ self.values[0] }}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - searchTerm: ''
+    - label: Status
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - d71e6
+        - b0ced
+        - c9fb1
+    - emptyMessage: ''
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 2.1999999999999997
+    height: 2.6
+    width: 12
+createdAt: 2022-09-10T17:46:12.815Z

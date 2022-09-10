@@ -1,0 +1,96 @@
+id: tabbedContainer1
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - false
+        - ''
+        - ''
+    - heightType: auto
+    - currentViewKey: '{{ self.viewKeys[0] }}'
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(255, 255, 255, 0)
+          - border: rgba(209, 209, 209, 0)
+          - headerBackground: rgba(255, 255, 255, 0)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - ''
+        - ''
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - Events
+        - Tickets
+        - Create Ticket
+    - events:
+        - ordered:
+            - method: clearValue
+            - enabled: '{{tabbedContainer1.currentViewKey == "Create Ticket"}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: multiselectListbox1
+            - waitType: debounce
+            - event: change
+            - type: widget
+            - waitMs: '0'
+    - _ids:
+        - 8cbf0
+        - 04cb5
+        - 6f093
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - ''
+        - ''
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - ''
+        - ''
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    col: 6
+    height: 0.2
+    width: 6
+createdAt: 2022-09-10T17:34:57.127Z

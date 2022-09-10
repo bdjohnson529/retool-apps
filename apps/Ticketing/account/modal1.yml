@@ -1,0 +1,27 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Edit
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 04cb5
+    row: 8.800000000000002
+    height: 1
+    width: 3
+createdAt: 2022-09-10T18:39:40.811Z

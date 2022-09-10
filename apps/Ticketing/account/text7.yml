@@ -1,0 +1,25 @@
+id: text7
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '## Tickets'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 04cb5
+    height: 1
+    width: 6
+createdAt: 2022-09-10T18:34:25.088Z

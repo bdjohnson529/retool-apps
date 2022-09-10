@@ -1,0 +1,47 @@
+id: date2
+type: widget
+subtype: DateWidget
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: ''
+    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
+    - dateFormat: MMM d, yyyy
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: date_submitted
+    - value: '{{ new Date() }}'
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - label: Date submitted
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: bold/interface-calendar
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: form2
+    height: 1
+    width: 12
+createdAt: 2022-09-10T18:41:48.122Z

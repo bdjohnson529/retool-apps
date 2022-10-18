@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []

@@ -1,42 +1,38 @@
-id: query1
+id: rest_query
 type: datasource
-subtype: SqlQueryUnified
-resourceName: 52ac13a7-2771-4243-a1d5-08eeb4cfaa94
-resourceDisplayName: CRM
+subtype: RESTQuery
+resourceName: REST-WithoutResource
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: '[{"key":"param","value":"key1"}]'
     - showFailureToaster: true
-    - query: ''
+    - paginationEnabled: false
+    - query: https://example.com
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -44,23 +40,21 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -70,16 +64,14 @@ template:
 
         return data
     - events: []
-    - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
+    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

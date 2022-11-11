@@ -1,0 +1,25 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '## Friday!!!!'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.6
+    col: 8
+    height: 0.6
+    width: 3
+createdAt: 2022-11-11T15:11:22.792Z

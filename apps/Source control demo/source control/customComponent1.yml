@@ -1,0 +1,82 @@
+id: customComponent1
+type: widget
+subtype: CustomComponentWidget
+template:
+  ordered:
+    - allowTopNavigation: false
+    - allowDownloads: false
+    - allowFullscreen: false
+    - allowForms: false
+    - model: |-
+        {
+          "displayText": "Custom React component with Material-UI!",
+          "queryToTrigger": "query1"
+        }
+    - allowCamera: false
+    - allowModals: false
+    - allowPopups: false
+    - iframeCode: >
+        <style>
+          body {
+            margin: 0;
+          }
+        </style>
+
+        <script src="https://cdn.tryretool.com/js/react.production.min.js"
+        crossorigin></script>
+
+        <script src="https://cdn.tryretool.com/js/react-dom.production.min.js"
+        crossorigin></script>
+
+        <script
+        src="https://unpkg.com/@material-ui/core@3.9.3/umd/material-ui.production.min.js"></script>
+
+
+
+        <div id="react"></div>
+
+
+        <script type="text/babel">
+          const { Button, Card, CardContent } = window["material-ui"];
+
+          const MyCustomComponent = ({ triggerQuery, model, modelUpdate }) => (
+            <Card>
+              <CardContent>
+                <div>{model.displayText}</div>
+                <Button
+                  color="primary"
+                  variant="outlined"
+                  onClick={() => triggerQuery(model.queryToTrigger)}
+                >
+                  Trigger {model.queryToTrigger}
+                </Button>
+                <Button
+                  color="primary"
+                  variant="outlined"
+                  onClick={() =>
+                    modelUpdate({ displayText: "much custom, such flexibility. wow." })
+                  }
+                >
+                  Update Model
+                </Button>
+              </CardContent>
+            </Card>
+          );
+
+          const ConnectedComponent = Retool.connectReactComponent(MyCustomComponent);
+          ReactDOM.render(<ConnectedComponent />, document.getElementById("react"));
+        </script>
+    - allowMicrophone: false
+    - allowSameOrigin: false
+    - allowPopupsToEscapeSandbox: false
+    - allowPayment: false
+    - allowGeolocation: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 15.8
+    col: 2
+    height: 4
+    width: 5
+createdAt: 2022-12-19T16:03:17.601Z

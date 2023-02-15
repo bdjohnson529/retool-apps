@@ -7,12 +7,14 @@ template:
     - horizontalAlign: center
     - srcWidth: null
     - clickable: false
+    - flipVertical: false
     - src: https://placekitten.com/400/400
     - hidden: false
     - srcHeight: null
     - showInEditor: false
     - tooltipText: ''
     - fit: cover
+    - flipHorizontal: false
     - style:
         ordered:
           - borderRadius: 50%

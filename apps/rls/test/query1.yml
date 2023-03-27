@@ -1,0 +1,24 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 72456fc2-2113-4856-9795-c4b981a3998b
+resourceDisplayName: POC DB
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-03-27T17:49:29.747Z
